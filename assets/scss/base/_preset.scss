@@ -6,3 +6,29 @@
     overflow: hidden;
     text-indent: -9999px;
 }
+
+.scroll-x{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* 모바일에서 스크롤 할 때 가속도*/
+    -ms-text-overflow-style: none; /* ie 에서 스크롤바 안 보이가 */
+    scrollbar-width: none; /* 파폭 스크롤바 안 보이게 */
+
+    &::-webkit-scrollbar{ /* 크롬 스크롤바 안 보이게 */
+        display: none;
+    }
+}
+
+.scroll-y{
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* 모바일에서 스크롤 할 때 가속도*/
+    -ms-text-overflow-style: none; /* ie 에서 스크롤바 안 보이가 */
+    scrollbar-width: none; /* 파폭 스크롤바 안 보이게 */
+
+    &::-webkit-scrollbar{ /* 크롬 스크롤바 안 보이게 */
+        display: none;
+    }
+}

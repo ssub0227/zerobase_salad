@@ -18,13 +18,15 @@
   z-index: 10000;
   text-align: center;
   border-radius: 16px 16px 0 0;
+
+  .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: $booking-color-text1;
+  }
+  
 }
 
-.title{
-  font-size: 20px;
-  font-weight: 700;
-  color: $booking-color-text1;
-}
 
 .type-list{
   margin-top: 32px;
