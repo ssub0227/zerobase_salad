@@ -318,6 +318,65 @@ textarea::-webkit-outer-spin-button {
   height: 24px;
 }
 
+.tab-switch-box {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.tab-switch-box .tab-switch {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.06);
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+  color: #666;
+}
+.tab-switch-box .tab-switch.is-active {
+  flex-grow: 1.2; /* 원래는 flex:1; 인데 flex-grow를 줘서 얘만 1.2로 간격을 넓힘 */
+  border: 1px solid #333;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.tab-switch-box .tab-switch.is-active::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg) translateX(-50%);
+}
+.tab-switch-box .tab-switch.is-active .ico-check {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.tab-switch-box .tab-switch .ico-check {
+  display: none;
+}
+
+.info-main-notice {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+.info-main-notice.alert {
+  color: #ff3d3b;
+  font-weight: 700;
+}
+
 .container {
   padding-top: 94px;
 }
