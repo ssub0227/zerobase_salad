@@ -542,7 +542,7 @@ textarea::-webkit-outer-spin-button {
   border-bottom: 1px solid #f2f2f2;
 }
 .menu-list-area.is-closed {
-  padding: 18px 24px;
+  padding: 24px 18px;
 }
 .menu-list-area.is-closed + .is-closed {
   margin-top: 0;
@@ -562,19 +562,21 @@ textarea::-webkit-outer-spin-button {
 .menu-list-area .title-area {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-.menu-list-area .title-area .title {
+.menu-list-area .title {
   font-size: 19px;
   font-weight: 700;
   counter-reset: #333;
   letter-spacing: -0.3px;
 }
-.menu-list-area .title-area .period {
+.menu-list-area .period {
   font-size: 14px;
   letter-spacing: -0.3px;
   color: #242424;
 }
-.menu-list-area .title-area .period::before {
+.menu-list-area .period::before {
   content: "";
   display: inline-block;
   background-color: #ededed;

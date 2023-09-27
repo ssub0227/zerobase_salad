@@ -11,7 +11,7 @@
   }
 
   &.is-closed {
-    padding: $m-padding 24px;
+    padding: 24px $m-padding;
 
     &+.is-closed {
       // is-closed 가 연속해서 올 때
@@ -37,29 +37,31 @@
   .title-area {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-    .title {
-      font-size: 19px;
-      font-weight: 700;
-      counter-reset: $booking-color-text100;
-      letter-spacing: -0.3px;
-    }
+  .title {
+    font-size: 19px;
+    font-weight: 700;
+    counter-reset: $booking-color-text100;
+    letter-spacing: -0.3px;
+  }
 
-    .period {
-      font-size: 14px;
-      letter-spacing: -0.3px;
-      color: $booking-color-text104;
+  .period {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: $booking-color-text104;
 
-      &::before {
-        content: '';
-        display: inline-block;
-        background-color: #ededed;
-        border-radius: 50%;
-        width: 4px;
-        height: 4px;
-        margin: 0 10px;
-        vertical-align: middle;
-      }
+    &::before {
+      content: '';
+      display: inline-block;
+      background-color: #ededed;
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      margin: 0 10px;
+      vertical-align: middle;
     }
   }
 }
