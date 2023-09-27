@@ -531,6 +531,60 @@ textarea::-webkit-outer-spin-button {
   color: #fff;
 }
 
+.menu-list-area {
+  padding: 28px 18px 10px;
+  background-color: #fff;
+}
+.menu-list-area:not(.new):not(.popular) {
+  margin-top: 10px;
+}
+.menu-list-area.new {
+  border-bottom: 1px solid #f2f2f2;
+}
+.menu-list-area.is-closed {
+  padding: 18px 24px;
+}
+.menu-list-area.is-closed + .is-closed {
+  margin-top: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.menu-list-area.is-closed .ico-arrow {
+  transform: rotate(180deg);
+}
+.menu-list-area.is-closed .menu-list {
+  display: none;
+}
+.menu-list-area .menu-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-list-area .title-area {
+  display: flex;
+  align-items: center;
+}
+.menu-list-area .title-area .title {
+  font-size: 19px;
+  font-weight: 700;
+  counter-reset: #333;
+  letter-spacing: -0.3px;
+}
+.menu-list-area .title-area .period {
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #242424;
+}
+.menu-list-area .title-area .period::before {
+  content: "";
+  display: inline-block;
+  background-color: #ededed;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
 .container {
   padding-top: 94px;
   background-color: #f4f7f9;

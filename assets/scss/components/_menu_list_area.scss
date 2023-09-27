@@ -1,0 +1,65 @@
+.menu-list-area {
+  padding: 28px $m-padding 10px;
+  background-color: #fff;
+
+  &:not(.new):not(.popular) {
+    margin-top: 10px;
+  }
+
+  &.new {
+    border-bottom: 1px solid $booking-color-border144;
+  }
+
+  &.is-closed {
+    padding: $m-padding 24px;
+
+    &+.is-closed {
+      // is-closed 가 연속해서 올 때
+      margin-top: 0;
+      border-bottom: 1px solid $booking-color-border144;
+    }
+
+    .ico-arrow {
+      transform: rotate(180deg);
+    }
+
+    .menu-list {
+      display: none;
+    }
+  }
+
+  .menu-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-area {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 19px;
+      font-weight: 700;
+      counter-reset: $booking-color-text100;
+      letter-spacing: -0.3px;
+    }
+
+    .period {
+      font-size: 14px;
+      letter-spacing: -0.3px;
+      color: $booking-color-text104;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        background-color: #ededed;
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        margin: 0 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
