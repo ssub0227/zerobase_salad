@@ -32,13 +32,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .title-area {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-between;    
   }
 
   .title {
@@ -52,6 +52,10 @@
     font-size: 14px;
     letter-spacing: -0.3px;
     color: $booking-color-text104;
+
+    .ico-period{
+      padding-right: 10px;
+    }
 
     &::before {
       content: '';
