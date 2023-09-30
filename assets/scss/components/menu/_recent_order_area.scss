@@ -29,6 +29,7 @@
   }
 
   .recent-menu-item{
+    position: relative;
     box-sizing: content-box;
     padding-left: 16px;
     width: 80px;
@@ -70,22 +71,22 @@
       height: 100%;
       border-radius: 100%;
     }
+  }
 
-    .badge-cart{
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 6px;
-      border: 1px solid $booking-color-border150;
-      border-radius: 100%;
-      background-color: $booking-color-bg8;
-      display: flex; /* 카트 밀림 현상 없애려고 추가 */
-    }
+  .badge-cart{
+    position: absolute;
+    top: 50px;
+    right: 16px;
+    padding: 6px;
+    border: 1px solid $booking-color-border150;
+    border-radius: 100%;
+    background-color: $booking-color-bg8;
+    display: flex; /* 카트 밀림 현상 없애려고 추가 */
+  }
 
-    .ico-cart{
-      width: 16px;
-      height: 16px;
-    }
+  .ico-cart{
+    width: 16px;
+    height: 16px;
   }
 
   .menu-name{

@@ -134,7 +134,6 @@
     }
 
     &+.menu-number-of-order {
-
       // .menu-grade 옆에 .menu-number-of-order(주문수) 있을 때에만 before 만듦
       &::before {
         content: '';
