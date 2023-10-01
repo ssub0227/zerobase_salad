@@ -1,0 +1,65 @@
+.menu-review-area {
+  .orderer-img-area {
+    padding-bottom: 22px;
+    background-color: #fff;
+
+    .title {
+      padding: 6px $m-padding 12px;
+    }
+  }
+
+  .title {
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: $booking-color-text6;
+
+    .num {
+      color: $green;
+      margin-left: 6px;
+    }
+  }
+
+  .orderer-pic-list {
+    display: flex;
+  }
+
+  .orderer-pic-item {
+    display: flex;
+
+    &:first-child::before {
+      content: '';
+      width: $m-padding;
+      height: 100%;
+      display: block;
+    }
+
+    &:last-child::after {
+      content: '';
+      width: $m-padding;
+      height: 100%;
+      display: block;
+    }
+
+    &+.orderer-pic-item {
+      // item들이 연달아서 나올 때
+      margin-left: 1px;
+    }
+  }
+
+  .orderer-pic-link {
+    position: relative;
+    display: flex;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
