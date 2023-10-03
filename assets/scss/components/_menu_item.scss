@@ -15,44 +15,44 @@
       display: flex;
       align-items: center;
       flex: 1;
+    }
 
-      .menu-image-area {
-        position: relative;
-        flex-shrink: 0; //너비를 벗어났을 경우 자동으로 줄임 -> 1이 기본, 0이 막기
-        margin-right: 12px;
-        border-radius: 5px;
-        overflow: hidden;
+    .menu-image-area {
+      position: relative;
+      flex-shrink: 0; //너비를 벗어났을 경우 자동으로 줄임 -> 1이 기본, 0이 막기
+      margin-right: 12px;
+      border-radius: 5px;
+      overflow: hidden;
 
-        &:not(.no-img)::after {
-          //no-img 아닌 경우에만 백그라운드 어둡게 + 그위에 이미지 png
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          background-color: rgba(0, 0, 0, 0.06);
-        }
-
-        .menu-img {
-          display: block;
-        }
+      &:not(.no-img)::after {
+        //no-img 아닌 경우에만 백그라운드 어둡게 + 그위에 이미지 png
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.06);
       }
 
-      .meni-desc {
-        margin-top: 4px;
-        letter-spacing: 0.4px;
-        color: $booking-color-text5;
-        @include multi-ellipsis(14px, 19px, 2)
+      .menu-img {
+        display: block;
       }
+    }
 
-      .menu-price {
-        margin-top: 4px;
-        line-height: 1.4;
-        font-size: 15px;
-        font-weight: 700;
-        color: $point-color;
-      }
+    .menu-desc {
+      margin-top: 4px;
+      letter-spacing: 0.4px;
+      color: $booking-color-text5;
+      @include multi-ellipsis(14px, 19px, 2)
+    }
+
+    .menu-price {
+      margin-top: 4px;
+      line-height: 1.4;
+      font-size: 15px;
+      font-weight: 700;
+      color: $point-color;
     }
 
     .btn-cart {
