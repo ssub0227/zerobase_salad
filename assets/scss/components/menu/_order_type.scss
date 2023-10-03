@@ -6,6 +6,10 @@
   bottom: 0;
   background-color: rgba(#000, 0.8);
   z-index: 9999;
+  
+  &.light{
+    background-color: rgba(#000, 0.4);
+  }
 }
 
 .order-type-popup {
