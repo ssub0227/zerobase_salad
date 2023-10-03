@@ -1,0 +1,34 @@
+.order-form-area{
+  .page-title-area{
+    height: 105px;
+    background-image: linear-gradient(264deg, #3accff, #2cec88);
+
+    .title{
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+      width: 100%; 
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      background-image: linear-gradient(264deg, #3accff, #2cec88); // 스크롤 돼도 배경색까지 fixed 이도록
+    }
+
+    .btn-close{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 56px;
+      height: 56px;
+
+      .ico-close{
+        width: 18px;
+      }
+    }
+
+  }
+}
