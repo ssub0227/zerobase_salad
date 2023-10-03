@@ -1,4 +1,5 @@
 .menu-review-area {
+
   // 공통
   .title {
     line-height: 22px;
@@ -21,7 +22,7 @@
     .title {
       padding: 6px $m-padding 12px;
     }
-  }  
+  }
 
   .orderer-pic-list {
     display: flex;
@@ -66,33 +67,34 @@
   }
 
   // 주문자 리뷰
-  .orderer-review-area{
+  .orderer-review-area {
     margin-top: 12px;
     background-color: #fff;
-    .title{
+
+    .title {
       padding: 16px $m-padding;
     }
   }
 
-  .review-list{
+  .review-list {
     border-top: 1px solid $booking-color-border4;
   }
 
-  .review-item{
+  .review-item {
     padding: 16px $m-padding;
     border-bottom: 1px solid $booking-color-border4;
   }
 
-  .review-star{
+  .review-star {
     position: relative;
-    display: flex;    
+    display: flex;
     align-items: center;
     font-weight: 600;
     font-size: 15px;
     color: $booking-color-text2;
   }
 
-  .ico-star-group{
+  .ico-star-group {
     position: relative;
     display: inline-block;
     margin-right: 6px;
@@ -101,7 +103,7 @@
     background: url('../images/ico-star-group.svg') no-repeat center left;
   }
 
-  .ico-star-group-fill{
+  .ico-star-group-fill {
     position: absolute;
     top: 0;
     left: 0;
@@ -111,20 +113,20 @@
     background: url('../images/ico-star-group-fill.svg') no-repeat center left;
   }
 
-  .review-text{
+  .review-text {
     line-height: 24px;
     margin-top: 4px;
     color: $booking-color-text6;
   }
 
-  .review-info{
+  .review-info {
     margin-top: 8px;
     color: $booking-color-text5;
     font-size: 14px;
     letter-spacing: -0.3px;
   }
 
-  .review-date::before{
+  .review-date::before {
     content: '';
     display: inline-block;
     margin: 0 8px;
@@ -134,7 +136,7 @@
     vertical-align: middle;
   }
 
-  .btn-more{
+  .btn-more {
     width: 100%;
     height: 50px;
     font-size: 16px;
@@ -144,7 +146,7 @@
     align-items: center;
     color: $booking-color-text3;
 
-    &::after{
+    &::after {
       content: '';
       margin: 0 0 3px 6px;
       width: 8px;
@@ -154,6 +156,4 @@
       transform: rotate(135deg);
     }
   }
-
-
 }

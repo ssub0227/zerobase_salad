@@ -1,15 +1,17 @@
-.container{
-  padding-top: $header-height;
-  padding-bottom: $order-box-area-height;
+.container {
   background-color: $booking-color-border151;
+  &:not(.order) {
+    padding-top: $header-height;
+    padding-bottom: $order-box-area-height;
+  }
 }
 
-.common-inner{
+.common-inner {
   margin: 0 auto;
   max-width: 720px;
 }
 
-.badge-popular{
+.badge-popular {
   display: inline-block;
   padding: 0 5px;
   border-radius: 10px;
