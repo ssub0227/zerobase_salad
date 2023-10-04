@@ -21,3 +21,21 @@
   color: #fff;
   background-color: #ff61a7;
 }
+
+.dimmed-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.8);
+  z-index: 9999;
+
+  &.hidden{
+    opacity: 0;
+  }
+  
+  &.light{
+    background-color: rgba(#000, 0.4);
+  }
+}
