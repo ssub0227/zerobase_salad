@@ -48,6 +48,12 @@
     letter-spacing: -0.3px;
   }
 
+  .btn-toggle{
+    margin: -16px;
+    padding: 16px;
+    display: flex; //여백 지우려고
+  }
+
   .period {
     font-size: 14px;
     letter-spacing: -0.3px;
