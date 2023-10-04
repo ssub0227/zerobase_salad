@@ -1,0 +1,21 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+}
+.modal-wrapper .modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 324px;
+  width: calc(100% - 32px);
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 10001;
+}/*# sourceMappingURL=modal.css.map */
